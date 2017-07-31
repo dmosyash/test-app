@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.home {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+}
+
+.weapon-container {
+  border: solid 1px;
+}
+
+.board {
+  float: left;
+}
+
+.weapon {
+  position: relative;
+  width: 100%;
+  /*padding-bottom: 30%;*/
+  border: solid 1px;
+  cursor: pointer;
+}
+
+.weapon-content {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  padding: 5%;
+}
+
+.frame {
+  float: left;
+  width: 22%;
+  /*padding-bottom: 22%;*/
+  border: solid 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+.frame-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

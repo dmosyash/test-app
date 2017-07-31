@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 60px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.content-holder {
+  position: relative;
+}
+
+.suggestions {
+  position: absolute;
+  /* width: 100%; */
+  top: 20px;
+  left: 10%;
+}
+
+.controls {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+
+.next-button {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+
+.previous-button {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+
+.list-contents {
+  width: 30%;
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

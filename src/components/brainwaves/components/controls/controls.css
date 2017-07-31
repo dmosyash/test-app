@@ -1,0 +1,99 @@
+.buttons {
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 8px 8px;
+}
+
+.buttons:hover {
+    background-color: #999;
+    color: black;
+}
+
+.play {
+  position: absolute;
+  border: 3px solid #fff;
+  width: 30px; 
+  height: 30px; 
+  bottom: 0px;
+  left: 90px;
+  background-color: transparent;
+  border-radius: 50%; 
+}
+
+.play:before {
+  position: absolute;
+  left: 11px;
+  top: 7px;
+  content:'';
+  border-left:  12px solid white;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.pause {
+  position: absolute;
+  border: 3px solid #fff;
+  width: 30px;  
+  height: 30px; 
+  bottom: 0px;
+  left: 90px;
+  background-color: transparent;
+  border-radius: 50%; 
+}
+
+.pause:before {
+    width: 5px;        
+    height: 14px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 8px;
+}
+ 
+.pause:after {
+    width: 5px;        
+    height: 14px;
+    background: #fff;
+    position: absolute;
+    content: "";
+    top: 8px;
+    right: 8px;
+}
+
+.repeat {
+  position: absolute;
+  bottom: 0px;
+  left: 94px;
+}
+
+#button svg {
+
+  width: 35px;
+
+  height: 35px;
+
+  display: inline-block;
+
+}
+
+.fa {
+  color: white;
+}
+
+.responsive-volume {
+  display: block;
+  width: 50%;
+  position: absolute;
+  left: 250px;
+  bottom: -4px;
+}
+  @media screen and (max-width: 580px) {
+    .responsive-volume {
+      display: none;
+      width: 0px;
+    }
+  }
