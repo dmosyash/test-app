@@ -2,15 +2,24 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: 35px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;
+}
+
+.App-header a {
+   margin: 10px; 
+   padding: 10px; 
+   display: inline;
+   text-decoration: none;
+   color: white;
+}
+
+.App-header a:hover {
+  background-color: #999;
   color: white;
 }
 

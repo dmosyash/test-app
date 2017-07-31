@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
-import Header from './components/dragDrop/Header.js'
+import Header from './Header.js'
 import Home from './components/dragDrop/Home.js'
 import TRex from './components/tRexGame/App.js'
 import Brainwaves from './components/brainwaves/App.js'
