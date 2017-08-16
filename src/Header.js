@@ -7,6 +7,9 @@ const Header = () => {
         <div className="App-header"> 
             <Link to='/'>Home</Link>&nbsp;
             <Link to='/trex'>T-rex</Link>
+            {/* <Link to='/trex/simple'>Simple</Link>
+            <Link to='/trex/medium'>Medium</Link>
+            <Link to='/trex/tough'>Tough</Link> */}
             <Link to='/brainwaves'>Brainwaves</Link>
         </div>
     );

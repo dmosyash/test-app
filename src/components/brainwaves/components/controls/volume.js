@@ -21,6 +21,7 @@ class VolumeSlider extends Component {
       volume: value
     });
     this.props.audio.volume(value / 100);
+    this.props.setVolume(value / 100);
   }
 
   toggleMute() {

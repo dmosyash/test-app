@@ -15,7 +15,8 @@ class Brainwaves extends Component {
     }
     this.audio = null;
     this.hover = false;
-    this.slideEnd = false;    
+    this.slideEnd = false;   
+    this.volume = 1; 
   }
 
   componentDidMount() {
@@ -91,7 +92,12 @@ class Brainwaves extends Component {
         onend: this.onAudioEnd.bind(this)
     });
     this.audio.play();
+    this.audio.volume(this.volume);
     this.slideEnd = false;
+  }
+
+  setVolume(volume) {
+    this.volume = volume;
   }
 
   listOfContents() {
@@ -113,7 +119,7 @@ class Brainwaves extends Component {
                <div className="content-holder" onMouseMove={() => this.hoverStart()} ref={(input) => {this.canvas = input}}>
                 <Content src={this.state.content.image} />
                 <div className="controls" style={{ display: this.state.showControls }}>
-                   <ControlBox gotoIndex={this.gotoIndex.bind(this)} currentIndex={this.state.content.order} playToggle={this.playPauseToggle.bind(this)} slideEnd={this.slideEnd} replay={this.replay.bind(this)} canvas={this.canvas} audio={this.audio} /> 
+                   <ControlBox gotoIndex={this.gotoIndex.bind(this)} currentIndex={this.state.content.order} playToggle={this.playPauseToggle.bind(this)} slideEnd={this.slideEnd} replay={this.replay.bind(this)} canvas={this.canvas} audio={this.audio} setVolume={this.setVolume.bind(this)} /> 
                 </div> 
                  { this.state.suggestions } 
               </div>

@@ -23,7 +23,7 @@ class ControlBox extends Component {
                 <PlayPause playToggle={this.props.playToggle} replay={this.props.replay} slideEnd={this.props.slideEnd} />
                 <NextButton gotoIndex={this.props.gotoIndex} currentIndex={this.props.currentIndex} />
                 <Fullscreen canvas={this.props.canvas} />
-                 <VolumeSlider audio={this.props.audio}/>  
+                 <VolumeSlider audio={this.props.audio} setVolume={this.props.setVolume} />  
             </div>
         )
     }
